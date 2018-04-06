@@ -16,20 +16,7 @@ public class Assets {
     public static BufferedImage pause;          // to store pause image
     //player
     public static BufferedImage player;        // to store player
-    //enemy
-    public static BufferedImage enemy;        // to store enemy
-    //bullet
-    public static BufferedImage bullet;        // to store bullet
-    //bullet
-    public static BufferedImage barrera;        // to store bullet
-    //bricks
-    public static BufferedImage spritesBrick;   // to store brick sprites
-    public static BufferedImage brick[];        // pictures
-    //Sounds
-    public static SoundClip backgroundSound;    // to store background sound
-    public static SoundClip killedSound;        // to store killed sound
-    public static SoundClip shootSound;         // to store shoot sound
-
+    
     /**
      * initializing the images of the game
      */
@@ -43,22 +30,5 @@ public class Assets {
         //img objects
         //player
         player = ImageLoader.loadImage("/images/Gun.png");
-        //enemy
-        enemy = ImageLoader.loadImage("/images/Enemigo1.png");
-        //bullet
-        bullet = ImageLoader.loadImage("/images/bullet.png");
-        //barrera
-        barrera = ImageLoader.loadImage("/images/barrera.png");
-        //bricks
-        spritesBrick = ImageLoader.loadImage("/images/bricks.png");
-        SpriteSheet brickSheet = new SpriteSheet(spritesBrick);
-        brick = new BufferedImage[3];
-        brick[0] = brickSheet.crop(0, 0, 80, 30);
-        brick[1] = brickSheet.crop(90, 0, 80, 30);
-        brick[2] = brickSheet.crop(180, 0, 80, 30);
-        //Sounds
-        backgroundSound = new SoundClip("/sounds/musicaFondo.wav");
-        killedSound = new SoundClip("/sounds/invaderkilled.wav");
-        shootSound = new SoundClip("/sounds/shoot.wav");
     }
 }

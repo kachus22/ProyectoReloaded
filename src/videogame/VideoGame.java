@@ -13,7 +13,7 @@ public class VideoGame {
     public static void main(String[] args) {
         // TODO code application logic here
         // Creating a Game object
-        Game g = new Game("Space Invaders", 1270, 800);
+        Game g = new Game("Game Over Food", 960, 720);
         // Initializing the game
         g.start();
     }
