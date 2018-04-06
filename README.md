@@ -1,2 +1,0 @@
-# ProyectoReloaded
-Proyecto Videojuegos
